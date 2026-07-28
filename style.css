@@ -1,0 +1,236 @@
+/* ====================================================
+   RANGLAR VA SHRIFTLAR — dizaynni shu yerdan o'zgartiring
+   ==================================================== */
+:root{
+  --bg: #15171c;
+  --surface: #1d2029;
+  --surface-2: #242833;
+  --border: #2c313d;
+  --text: #eceef2;
+  --text-muted: #8b93a3;
+  --accent: #4f6df5;      /* asosiy rang — havolalar, urg'ular */
+  --accent-soft: rgba(79,109,245,0.14);
+  --gold: #e8a33d;        /* ikkinchi rang — kursor, teglar */
+  --radius: 14px;
+}
+
+*{ box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3{
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 0;
+}
+
+a{ color: inherit; }
+
+/* ===================== TOPBAR ===================== */
+.topbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 28px 24px 0 24px;
+}
+.logo{
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+.dot{ color: var(--accent); }
+.topbar nav a{
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-left: 24px;
+  transition: color .15s;
+}
+.topbar nav a:hover{ color: var(--text); }
+
+/* ===================== HERO ===================== */
+.hero{
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 90px 24px 70px 24px;
+  border-bottom: 1px solid var(--border);
+}
+.eyebrow{
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: var(--accent);
+  margin: 0 0 14px 0;
+  letter-spacing: 0.02em;
+}
+.hero h1{
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  display: inline;
+}
+.cursor{
+  display: inline-block;
+  width: 4px;
+  height: 34px;
+  background: var(--gold);
+  margin-left: 10px;
+  vertical-align: middle;
+  border-radius: 2px;
+  animation: blink 1.1s step-end infinite;
+}
+@keyframes blink{ 0%,49%{opacity:1} 50%,100%{opacity:0} }
+
+.handle{
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-muted);
+  font-size: 14px;
+  margin: 10px 0 24px 0;
+}
+
+.bio{
+  font-size: 17px;
+  color: var(--text);
+  max-width: 560px;
+  margin: 0 0 28px 0;
+}
+
+.terminal{
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  max-width: 620px;
+  margin-bottom: 32px;
+}
+.terminal .prompt{ color: var(--gold); }
+.terminal .path{ color: var(--text-muted); }
+.terminal .path.active{ color: var(--accent); font-weight: 600; }
+.terminal .arrow{ color: var(--border); }
+
+.links{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.links a{
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--text-muted);
+  border-bottom: 1px solid transparent;
+  transition: color .15s, border-color .15s;
+}
+.links a:hover{ color: var(--text); border-color: var(--text-muted); }
+
+/* ===================== PROJECTS ===================== */
+.projects{
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+.projects h2{
+  font-size: 26px;
+  margin-bottom: 28px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.card{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: border-color .15s, transform .15s;
+}
+.card:hover{ border-color: var(--accent); transform: translateY(-2px); }
+
+.card.placeholder{
+  border-style: dashed;
+  color: var(--text-muted);
+}
+.card.placeholder:hover{ transform: none; border-color: var(--border); }
+
+.card-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.card h3{ font-size: 17px; }
+
+.tag{
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 4px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.card p{
+  font-size: 14px;
+  color: var(--text-muted);
+  margin: 0;
+  flex: 1;
+}
+
+.repo{
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: var(--gold);
+  text-decoration: none;
+}
+.repo:hover{ text-decoration: underline; }
+
+/* ===================== CONTACT ===================== */
+.contact{
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 20px 24px 80px 24px;
+  border-top: 1px solid var(--border);
+  padding-top: 60px;
+}
+.contact h2{ font-size: 26px; margin-bottom: 12px; }
+.contact p{ color: var(--text-muted); margin-bottom: 24px; }
+.contact .links a{ font-family: 'JetBrains Mono', monospace; }
+
+/* ===================== FOOTER ===================== */
+footer{
+  text-align: center;
+  padding: 24px;
+  color: var(--text-muted);
+  font-size: 13px;
+  border-top: 1px solid var(--border);
+}
+
+/* ===================== MOBILE ===================== */
+@media (max-width: 600px){
+  .hero h1{ font-size: 32px; }
+  .topbar nav a{ margin-left: 14px; }
+}
+
+/* Kamaytirilgan harakat afzalligi bo'lgan foydalanuvchilar uchun */
+@media (prefers-reduced-motion: reduce){
+  .cursor{ animation: none; opacity: 1; }
+  html{ scroll-behavior: auto; }
+}

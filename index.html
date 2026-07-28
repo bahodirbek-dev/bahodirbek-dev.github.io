@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bahodirbek Ishmurzayev — Loyihalar</title>
+<meta name="description" content="AKHU Sun'iy Intellekt yo'nalishi talabasi Bahodirbek Ishmurzayev (Teo_uzb)ning mustaqil Python loyihalari.">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="topbar">
+    <span class="logo">bahodirbek<span class="dot">.</span>dev</span>
+    <nav>
+      <a href="#loyihalar">Loyihalar</a>
+      <a href="#aloqa">Aloqa</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO QISM ============ -->
+    <section class="hero">
+      <p class="eyebrow">Sun'iy Intellekt talabasi &middot; AKHU</p>
+      <h1>Ishmurzayev Bahodirbek<span class="cursor"></span></h1>
+      <p class="handle">taxallus: Teo_uzb</p>
+
+      <p class="bio">Independent Python projects by an Artificial Intelligence student at AKHU.</p>
+
+      <!-- O'quv yo'li — real ketma-ketlik, o'zgartirmang yoki davom ettiring -->
+      <div class="terminal">
+        <span class="prompt">$</span>
+        <span class="path">python asoslari</span>
+        <span class="arrow">→</span>
+        <span class="path">OOP</span>
+        <span class="arrow">→</span>
+        <span class="path">NumPy</span>
+        <span class="arrow">→</span>
+        <span class="path">Pandas</span>
+        <span class="arrow">→</span>
+        <span class="path active">Machine Learning</span>
+      </div>
+
+      <div class="links">
+        <a href="https://github.com/bahodirbek-dev" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://t.me/bahodirbek_o8" target="_blank" rel="noopener">Telegram ↗</a>
+        <a href="mailto:j4735539@gmail.com">Email ↗</a>
+      </div>
+    </section>
+
+    <!-- ============ LOYIHALAR QISMI ============ -->
+    <!--
+      YANGI LOYIHA QO'SHISH: pastdagi <article class="card">...</article>
+      blokini nusxalab, matnlarni o'zgartiring. Kerak bo'lmasa
+      "repo" havolasini olib tashlashingiz mumkin.
+    -->
+    <section id="loyihalar" class="projects">
+      <h2>Loyihalar</h2>
+
+      <div class="grid">
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Loyiha nomi</h3>
+            <span class="tag">Python</span>
+          </div>
+          <p>Loyiha nima qilishi, nimalarni o'rgatgani haqida qisqacha tavsif shu yerga yoziladi.</p>
+          <a class="repo" href="#" target="_blank" rel="noopener">kodni ko'rish →</a>
+        </article>
+
+        <article class="card placeholder">
+          <div class="card-top">
+            <h3>Keyingi loyiha shu yerda paydo bo'ladi</h3>
+          </div>
+          <p>Yuqoridagi kartani nusxalab, o'z loyihalaringizni qo'shib boring.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ ALOQA QISMI ============ -->
+    <section id="aloqa" class="contact">
+      <h2>Aloqa</h2>
+      <p>Savol yoki taklif bo'lsa, quyidagi manzillar orqali murojaat qilishingiz mumkin.</p>
+      <div class="links">
+        <a href="https://t.me/bahodirbek_o8" target="_blank" rel="noopener">Telegram: @bahodirbek_o8</a>
+        <a href="mailto:j4735539@gmail.com">Email: j4735539@gmail.com</a>
+        <a href="https://github.com/bahodirbek-dev" target="_blank" rel="noopener">GitHub: bahodirbek-dev</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Bahodirbek Ishmurzayev</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
