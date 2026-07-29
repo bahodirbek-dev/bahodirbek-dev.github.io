@@ -43,7 +43,6 @@ h1, h2, h3, h4{
 a{ color: inherit; }
 
 /* ===================== TOPBAR ===================== */
-/* ===================== TOPBAR ===================== */
 .topbar{
   display: flex;
   justify-content: center;
@@ -51,11 +50,6 @@ a{ color: inherit; }
   max-width: 860px;
   margin: 0 auto;
   padding: 28px 24px 0 24px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
 }
 .logo{
   font-family: 'Space Grotesk', sans-serif;
@@ -83,15 +77,12 @@ a{ color: inherit; }
 .hero{
   max-width: 860px;
   margin: 0 auto;
-  min-height: 100vh;
-  padding: 24px;
+  padding: 90px 24px 70px 24px;
   border-bottom: 1px solid var(--border);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
 }
 .eyebrow{
   font-family: 'JetBrains Mono', monospace;
