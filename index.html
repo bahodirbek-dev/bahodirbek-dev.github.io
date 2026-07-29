@@ -36,7 +36,7 @@
 
     <!-- ============ BIOGRAPHY SECTION ============ -->
     <!-- Edit the paragraph below with your own goals, ambitions, and interests. -->
-    <section id="biography" class="biography">
+    <section id="biography" class="biography reveal">
       <h2>Biography</h2>
       <p>
         I'm an Artificial Intelligence student at <a class="uni-link" href="https://akhu.uz" target="_blank" rel="noopener">Al-Khwarizmi University</a>, building my foundation in
@@ -54,7 +54,7 @@
       block below and paste it inside the matching category's <div class="grid">.
       Change the text inside. Remove the "repo" link if you don't need it.
     -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects reveal">
       <h2>My Projects</h2>
 
       <!-- ---- Category 1: Python Projects ---- -->
@@ -117,7 +117,7 @@
       description, and set the "view-link" href to any resource — an image,
       certificate, article, or any other link.
     -->
-    <section id="achievements" class="achievements">
+    <section id="achievements" class="achievements reveal">
       <h2>My Achievements</h2>
 
       <div class="grid">
@@ -142,7 +142,7 @@
     </section>
 
     <!-- ============ CONTACT SECTION ============ -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact reveal">
       <p class="rights"> 2026 Copyright © | All rights reserved. </p>
       
       <div class="icon-links">
@@ -158,5 +158,17 @@
       </div>
     </section>
   </main>
+  <script>
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    revealEls.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
