@@ -119,7 +119,7 @@ a{ color: inherit; }
 .bio{
   font-size: 16px;
   color: var(--text);
-  max-width: 560px;
+  max-width: 600px;
   margin: 0;
 }
 
