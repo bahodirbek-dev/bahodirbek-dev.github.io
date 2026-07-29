@@ -33,8 +33,6 @@ body{
   color: var(--text);
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
-   border-left: 0.8px solid var(--accent);
-  border-right: 0.8px solid var(--accent);
 }
 
 h1, h2, h3, h4{
