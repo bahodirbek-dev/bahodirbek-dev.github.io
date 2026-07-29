@@ -43,13 +43,18 @@ h1, h2, h3, h4{
 a{ color: inherit; }
 
 /* ===================== TOPBAR ===================== */
-.topbar{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hero{
   max-width: 860px;
   margin: 0 auto;
-  padding: 28px 24px 0 24px;
+  min-height: 100vh;
+  padding: 24px;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 .logo{
   font-family: 'Space Grotesk', sans-serif;
